@@ -1,0 +1,10 @@
+#REPOAP
+
+Four main takeaways ✅
+What it does: Automates monitoring NHC/NWS feeds, detects relevant alerts, generates Spanish HTML story fragments, and can post to the El Vocero Blox CMS or send newsroom emails. 🔧
+
+Core pieces: main.py orchestrates; NWS.py and NHC.py parse feeds and render templates; blox.py and util.py handle CMS posting, translation, and email. 📁
+
+Testability & safety: Includes test_files for local testing and requires explicit flags (-p/--post, -e/--email) to actually post/send; parsed-ID files prevent duplicate processing. 🧪
+
+Deployment notes: Requires environment variables (SMTP, Blox auth, optional DEEPL_AUTH_KEY), may need IP whitelisting for Blox, and logging is configurable—review these before production use. ⚠️
