@@ -1,6 +1,6 @@
 #REPOAP
 
-Four main takeaways ✅
+Four main takeaways from Copilot
 What it does: Automates monitoring NHC/NWS feeds, detects relevant alerts, generates Spanish HTML story fragments, and can post to the El Vocero Blox CMS or send newsroom emails. 🔧
 
 Core pieces: main.py orchestrates; NWS.py and NHC.py parse feeds and render templates; blox.py and util.py handle CMS posting, translation, and email. 📁
